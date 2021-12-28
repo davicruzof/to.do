@@ -8,7 +8,7 @@ describe('Header', () => {
 
     const { getByText, rerender } = render(<Header tasksCounter={mockedTasksCounter} />);
 
-    expect(getByText('0 tarefas'));
+    expect(getByText('0 tarefa'));
 
     mockedTasksCounter = 1;
 

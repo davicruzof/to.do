@@ -7,8 +7,7 @@ describe('Home', () => {
   it('should be able to render new added tasks', () => {
     const { getByPlaceholderText, getByText } = render(<Home />);
     const inputElement = getByPlaceholderText('Adicionar novo todo...');
-
-    expect(getByText('0 tarefas'));
+    expect(getByText('0 tarefa'));
 
     fireEvent.changeText(inputElement, 'Primeira tarefa');
     fireEvent(inputElement, 'submitEditing');
